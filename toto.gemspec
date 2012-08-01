@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "toto"
-  s.version = "0.4.9.1"
+  s.version = "0.4.9.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["cloudhead"]
-  s.date = "2012-07-31"
+  s.date = "2012-08-01"
   s.description = "the tiniest blog-engine in Oz."
   s.email = "self@cloudhead.net"
   s.extra_rdoc_files = [
