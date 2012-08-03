@@ -240,7 +240,7 @@ module Toto
       self.taint
       self.update data
       unless self[:date].is_a? Date
-        self[:date] = DateTime.parse(self[:date].gsub('/', '-')) rescue DateTime.today
+        self[:date] = DateTime.parse(self[:date].gsub('/', '-')) rescue DateTime.now
       end
       self
     end
