@@ -47,6 +47,14 @@ context Toto do
     end
   end
 
+  context "links to proper loaded article date and not today" do
+    setup do
+      Toto::Article.new("test/articles/2011-08-01-with-a-valid-date-not-today.txt", @config)
+    end
+
+    asserts("url points to the actual file date") { topic.url }.equals "#{URL}/2011/08/01/with-a-valid-date-not-today/"
+  end
+
   context "GET /about" do
     setup { @toto.get('/about') }
     asserts("returns a 200")                { topic.status }.equals 200
