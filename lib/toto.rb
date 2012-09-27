@@ -10,6 +10,7 @@ if RUBY_PLATFORM =~ /win32/
   Markdown = Maruku
 else
   require 'multimarkdown'
+  Markdown = MultiMarkdown
 end
 
 require 'builder'
@@ -41,7 +42,7 @@ module Toto
 
     def markdown text
       if (options = @config[:markdown])
-        MultiMarkdown.new(text.to_s.strip, *(options.eql?(true) ? [] : options)).to_html
+        Markdown.new(text.to_s.strip, *(options.eql?(true) ? [] : options)).to_html
       else
         text.strip
       end
