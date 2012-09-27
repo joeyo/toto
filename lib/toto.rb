@@ -271,7 +271,7 @@ module Toto
       text = text.sub(/\.\Z/, '&hellip;') if text.length < self[:body].length
 
       # append links and markdown summary
-      markdown(text << "\n" << links.join("\n").strip)
+      markdown text << "\n" << links.join("\n").strip
     end
 
     def url
