@@ -160,7 +160,7 @@ context Toto do
       end
 
       should("have a title")               { topic.title }.equals "Toto & The Wizard of Oz."
-      should("parse the body as markdown") { topic.body }.equals "<h1>Chapter I</h1>\n\n<p>hello, <em>stranger</em>.</p>\n"
+      should("parse the body as markdown") { topic.body }.equals "<h1 id=\"chapteri\">Chapter I</h1>\n\n<p>hello, <em>stranger</em>.</p>"
       should("create an appropriate slug") { topic.slug }.equals "toto-and-the-wizard-of-oz"
       should("set the date")               { topic.date }.equals "the time is #{DateTime.now.strftime("%Y/%m/%d %H:%M")}"
       should("create a summary")           { topic.summary == topic.body }
@@ -197,7 +197,7 @@ context Toto do
       should("use the author") { topic.author }.equals "toetoe"
 
       context "and long first paragraph" do
-        should("create a valid summary") { topic.summary }.equals "<p>" + ("a little bit of text." * 5).chop + "&hellip;</p>\n"
+        should("create a valid summary") { topic.summary }.equals "<p>" + ("a little bit of text." * 5).chop + "&hellip;</p>"
       end
 
       context "and a short first paragraph" do
