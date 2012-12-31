@@ -7,16 +7,16 @@ begin
     gem.name = "toto"
     gem.summary = %Q{the tiniest blog-engine in Oz}
     gem.description = %Q{the tiniest blog-engine in Oz.}
-    gem.email = "self@cloudhead.net"
-    gem.homepage = "http://github.com/cloudhead/toto"
-    gem.authors = ["cloudhead"]
+    gem.email = "joseph.odoherty@gmail.com"
+    gem.homepage = "http://github.com/joeyo/toto"
+    gem.authors = ["joeyo"]
     gem.add_development_dependency "riot"
     gem.add_dependency "builder"
     gem.add_dependency "rack"
     if RUBY_PLATFORM =~ /win32/
       gem.add_dependency "maruku"
     else
-      gem.add_dependency "rdiscount"
+      gem.add_dependency "rpeg-multimarkdown"
     end
   end
   Jeweler::GemcutterTasks.new

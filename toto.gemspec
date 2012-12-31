@@ -5,13 +5,13 @@
 
 Gem::Specification.new do |s|
   s.name = "toto"
-  s.version = "0.4.9.3"
+  s.version = "0.4.9.4b"
 
-  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["cloudhead"]
-  s.date = "2012-08-03"
+  s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
+  s.authors = ["joeyo"]
+  s.date = "2012-12-31"
   s.description = "the tiniest blog-engine in Oz."
-  s.email = "self@cloudhead.net"
+  s.email = "joseph.odoherty@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE",
     "README.md",
@@ -46,9 +46,9 @@ Gem::Specification.new do |s|
     "test/toto_test.rb",
     "toto.gemspec"
   ]
-  s.homepage = "http://github.com/cloudhead/toto"
+  s.homepage = "http://github.com/joeyo/toto"
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.23"
+  s.rubygems_version = "1.8.24"
   s.summary = "the tiniest blog-engine in Oz"
 
   if s.respond_to? :specification_version then
@@ -58,18 +58,18 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<riot>, [">= 0"])
       s.add_runtime_dependency(%q<builder>, [">= 0"])
       s.add_runtime_dependency(%q<rack>, [">= 0"])
-      s.add_runtime_dependency(%q<rdiscount>, [">= 0"])
+      s.add_runtime_dependency(%q<rpeg-multimarkdown>, [">= 0"])
     else
       s.add_dependency(%q<riot>, [">= 0"])
       s.add_dependency(%q<builder>, [">= 0"])
       s.add_dependency(%q<rack>, [">= 0"])
-      s.add_dependency(%q<rdiscount>, [">= 0"])
+      s.add_dependency(%q<rpeg-multimarkdown>, [">= 0"])
     end
   else
     s.add_dependency(%q<riot>, [">= 0"])
     s.add_dependency(%q<builder>, [">= 0"])
     s.add_dependency(%q<rack>, [">= 0"])
-    s.add_dependency(%q<rdiscount>, [">= 0"])
+    s.add_dependency(%q<rpeg-multimarkdown>, [">= 0"])
   end
 end
 
