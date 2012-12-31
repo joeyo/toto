@@ -91,7 +91,7 @@ module Toto
     end
 
     def article route
-      {Article.new("#{Paths[:articles]}/#{route.join('-')}.#{self[:ext]}", @config).load}.merge archives
+      Article.new("#{Paths[:articles]}/#{route.join('-')}.#{self[:ext]}", @config).load.merge archives
     end
 
     def /
