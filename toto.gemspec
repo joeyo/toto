@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "toto"
-  s.version = "0.4.9.4b"
+  s.version = "0.4.9.5"
 
-  s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
+  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["joeyo"]
-  s.date = "2012-12-31"
+  s.date = "2013-01-01"
   s.description = "the tiniest blog-engine in Oz."
   s.email = "joseph.odoherty@gmail.com"
   s.extra_rdoc_files = [
